@@ -2,6 +2,7 @@ import React from 'react';
 import r6stats from '../assets/img/covers/r6-stats.png'
 import todo from '../assets/img/covers/todo_app.png'
 import pizza from '../assets/img/covers/space-pizza.png'
+import lookat from '../assets/img/covers/lookat_manager.png'
 import { useRef, useEffect } from 'react'
 import { BsGithub, BsGlobe } from "react-icons/bs"
 import { BiLinkExternal } from 'react-icons/bi'
@@ -94,6 +95,24 @@ export default function Projects( {observerOptions, setId, activeId} ) {
                                 <div className={tiles.div}>
                                     <a href={"#"}><BsGithub className={tiles.logo}/></a>
                                     <a href={"https://www.adrien-guillemot.fr/space-pizza"}><BsGlobe className={tiles.logo}/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={tiles.card}>
+                        <div className="h-full w-full flip-card-inner">
+                            <div className="absolute w-full h-full flip-card-front">
+                                <img src={lookat} alt="LookAt dummy enterprise logo" className={"w-full h-full"} />
+                            </div>
+                            <div className={tiles.simple}>
+                                <div>
+                                    <h4 className={tiles.title}>LookAt Shop Manager</h4>
+                                    <p className={tiles.text}>App réalisée sous React, Node et Express. <br /></p>
+                                </div>
+                                <div className={tiles.div}>
+                                    <a href={"https://github.com/adrien-gllmt/lookat-manager-app"}><BsGithub className={tiles.logo}/></a>
+                                    <a href={"https://www.adrien-guillemot.fr/lookat-manager"}><BsGlobe className={tiles.logo}/></a>
                                 </div>
                             </div>
                         </div>
