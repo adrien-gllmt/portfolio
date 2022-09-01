@@ -46,6 +46,24 @@ export default function Projects( {observerOptions, setId, activeId} ) {
 
                 <div className={"grid grid-cols-2 w-[256px] h-max sm:w-[512px] md:w-[616px] lg:grid-cols-4 lg:w-[820px] xl:w-[1228px]"}>
                     <p className={"col-span-2 flex text-p-blue text-[8px] mb-2 gap-2 sm:text-[10px] lg:hidden"}><MdTouchApp className={"fill-p-blue h-3 w-3 sm:h-4 sm:w-4"}/> Touchez une tuile pour la découvrir !</p>
+
+                    <div className={tiles.card}>
+                        <div className="h-full w-full flip-card-inner">
+                            <div className="absolute w-full h-full flip-card-front">
+                                <img src={lookat} alt="LookAt dummy enterprise logo" className={"w-full h-full"} />
+                            </div>
+                            <div className={tiles.simple}>
+                                <div>
+                                    <h4 className={tiles.title}>LookAt Shop Manager</h4>
+                                    <p className={tiles.text}>App réalisée sous React, Node et Express. <br /></p>
+                                </div>
+                                <div className={tiles.div}>
+                                    <a href={"https://github.com/adrien-gllmt/lookat-manager-app"}><BsGithub className={tiles.logo}/></a>
+                                    <a href={"https://www.adrien-guillemot.fr/lookat-manager"}><BsGlobe className={tiles.logo}/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className={tiles.card}>
                         <div className="h-full w-full flip-card-inner">
                             <div className="absolute w-full h-full flip-card-front">
@@ -58,24 +76,6 @@ export default function Projects( {observerOptions, setId, activeId} ) {
                                 </div>
                                 <div className={tiles.div}>
                                     <a href={"https://github.com/adrien-gllmt/r6-stats-bot"}><BsGithub className={tiles.logo}/></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={tiles.card}>
-                        <div className="h-full w-full flip-card-inner">
-                            <div className="absolute w-full h-full flip-card-front">
-                                <img src={todo} alt="Avatar" className={"w-full h-full"} />
-                            </div>
-                            <div className={tiles.simple}>
-                                <div>
-                                    <h4 className={tiles.title}>Todo List</h4>
-                                    <p className={tiles.text}>App réalisée sous Vue.js <br /> Still WIP</p>
-                                </div>
-                                <div className={tiles.div}>
-                                    <a href={"https://github.com/adrien-gllmt/vue-todo-app"}><BsGithub className={tiles.logo}/></a>
-                                    <a href={"https://www.adrien-guillemot.fr/todo-list"}><BsGlobe className={tiles.logo}/></a>
                                 </div>
                             </div>
                         </div>
@@ -103,16 +103,16 @@ export default function Projects( {observerOptions, setId, activeId} ) {
                     <div className={tiles.card}>
                         <div className="h-full w-full flip-card-inner">
                             <div className="absolute w-full h-full flip-card-front">
-                                <img src={lookat} alt="LookAt dummy enterprise logo" className={"w-full h-full"} />
+                                <img src={todo} alt="Avatar" className={"w-full h-full"} />
                             </div>
                             <div className={tiles.simple}>
                                 <div>
-                                    <h4 className={tiles.title}>LookAt Shop Manager</h4>
-                                    <p className={tiles.text}>App réalisée sous React, Node et Express. <br /></p>
+                                    <h4 className={tiles.title}>Todo List</h4>
+                                    <p className={tiles.text}>App réalisée sous Vue.js <br /> Still WIP</p>
                                 </div>
                                 <div className={tiles.div}>
-                                    <a href={"https://github.com/adrien-gllmt/lookat-manager-app"}><BsGithub className={tiles.logo}/></a>
-                                    <a href={"https://www.adrien-guillemot.fr/lookat-manager"}><BsGlobe className={tiles.logo}/></a>
+                                    <a href={"https://github.com/adrien-gllmt/vue-todo-app"}><BsGithub className={tiles.logo}/></a>
+                                    <a href={"https://www.adrien-guillemot.fr/todo-list"}><BsGlobe className={tiles.logo}/></a>
                                 </div>
                             </div>
                         </div>
